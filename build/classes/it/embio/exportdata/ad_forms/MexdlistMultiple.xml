@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<REPORT>
+	<template file="MexdlistMultiple.html"/>
+	<PARAMETER id="paramDirectory" name="directory" default=""/>
+	<PARAMETER id="paramLanguage" name="language" default=""/>
+        <PARAMETER id="paramAlertMsg" name="alertMsg" default=""/>
+	<PARAMETER id="paramCSS" name="theme" attribute="href" replace="Default"/>
+	<PARAMETER id="fieldKey" name="key" attribute="value"/>
+	<PARAMETER id="fieldName" name="name" attribute="value"/>
+	<DISCARD id="discard"/>
+</REPORT>

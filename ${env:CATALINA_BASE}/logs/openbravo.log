@@ -1,0 +1,259 @@
+2025-06-10 14:58:17,140 [main] INFO  org.jboss.weld.environment.servletWeldServlet - WELD-ENV-001008: Initialize Weld using ServletContainerInitializer
+2025-06-10 14:58:17,159 [main] INFO  org.jboss.weld.Version - WELD-000900: 3.1.7 (SP1)
+2025-06-10 14:58:17,292 [main] INFO  org.jboss.weld.Bootstrap - WELD-ENV-000020: Using jandex for bean discovery
+2025-06-10 14:58:17,907 [main] INFO  org.jboss.weld.Bootstrap - WELD-000101: Transactional services not available. Injection of @Inject UserTransaction not available. Transactional observers will be invoked synchronously.
+2025-06-10 14:58:18,702 [main] INFO  org.jboss.weld.environment.servletTomcat - WELD-ENV-001100: Tomcat 7+ detected, CDI injection will be available in Servlets, Filters and Listeners.
+2025-06-10 14:58:19,295 [main] INFO  org.jboss.weld.environment.servletWeldServlet - WELD-ENV-001006: org.jboss.weld.environment.servlet.EnhancedListener used to initialize Weld
+2025-06-10 14:58:19,298 [main] INFO  org.openbravo.base.ConfigParameters - Properties file: /home/openbravo/servers/tomcat/webapps/infinityerp//WEB-INF/Openbravo.properties
+2025-06-10 14:58:19,299 [main] INFO  org.openbravo.base.ConfigParameters - Checking override properties for LTP-W-MUM-5862
+2025-06-10 14:58:19,356 [main] INFO  org.openbravo.dal.core.DalLayerInitializer - Initializing in-memory model...
+2025-06-10 14:58:19,359 [main] INFO  org.openbravo.base.model.ModelProvider - Building runtime model
+2025-06-10 14:58:23,522 [main] INFO  org.openbravo.dal.core.DalLayerInitializer - Model read in-memory, generating mapping...
+2025-06-10 14:58:29,910 [main] INFO  org.openbravo.dal.core.DalLayerInitializer - Dal layer initialized
+2025-06-10 14:58:29,985 [main] INFO  org.openbravo.client.application.window.ApplicationDictionaryCachedStructures - ADCS initialized, use cache: true
+2025-06-10 14:58:29,989 [main] INFO  org.openbravo.client.application.report.CompiledReportManager - CompiledReportManager initialized, use cache: true
+2025-06-10 14:58:30,006 [main] INFO  org.openbravo.base.OBSchedulerInitializerListener - Quartz Initializer Servlet loaded, initializing Scheduler...
+2025-06-10 14:58:30,074 [main] INFO  org.quartz.impl.StdSchedulerFactory - Using default implementation for ThreadExecutor
+2025-06-10 14:58:30,078 [main] INFO  org.quartz.simpl.SimpleThreadPool - Job execution threads will use class loader of thread: main
+2025-06-10 14:58:30,098 [main] INFO  org.quartz.core.SchedulerSignalerImpl - Initialized Scheduler Signaller of type: class org.quartz.core.SchedulerSignalerImpl
+2025-06-10 14:58:30,098 [main] INFO  org.quartz.core.QuartzScheduler - Quartz Scheduler v.2.3.2 created.
+2025-06-10 14:58:30,100 [main] INFO  org.quartz.simpl.RAMJobStore - RAMJobStore initialized.
+2025-06-10 14:58:30,101 [main] INFO  org.quartz.core.QuartzScheduler - Scheduler meta-data: Quartz Scheduler (v2.3.2) 'DefaultQuartzScheduler' with instanceId 'NON_CLUSTERED'
+  Scheduler class: 'org.quartz.core.QuartzScheduler' - running locally.
+  NOT STARTED.
+  Currently in standby mode.
+  Number of jobs executed: 0
+  Using thread pool 'org.quartz.simpl.SimpleThreadPool' - with 10 threads.
+  Using job-store 'org.quartz.simpl.RAMJobStore' - which does not support persistence. and is not clustered.
+
+2025-06-10 14:58:30,101 [main] INFO  org.quartz.impl.StdSchedulerFactory - Quartz scheduler 'DefaultQuartzScheduler' initialized from the specified file : 'quartz.properties' from the class resource path.
+2025-06-10 14:58:30,101 [main] INFO  org.quartz.impl.StdSchedulerFactory - Quartz scheduler version: 2.3.2
+2025-06-10 14:58:30,104 [main] INFO  org.openbravo.base.OBSchedulerInitializerListener - Scheduler will start in 30 seconds.
+2025-06-10 14:58:30,104 [main] INFO  org.openbravo.base.OBSchedulerInitializerListener - Initalizing singleton instance of org.openbravo.scheduling.OBScheduler
+2025-06-10 14:58:30,310 [main] INFO  org.openbravo.service.importprocess.ImportEntryManager - Import entry manager settings
+2025-06-10 14:58:30,310 [main] INFO  org.openbravo.service.importprocess.ImportEntryManager -   batch size: 5000
+2025-06-10 14:58:30,310 [main] INFO  org.openbravo.service.importprocess.ImportEntryManager -   number of threads: 15
+2025-06-10 14:58:30,310 [main] INFO  org.openbravo.service.importprocess.ImportEntryManager -   task queue size: 1000
+2025-06-10 14:58:30,311 [main] INFO  org.openbravo.service.importprocess.ImportEntryManager -   wait time: 60 s
+2025-06-10 14:58:30,311 [main] INFO  org.openbravo.service.importprocess.ImportEntryManager -   processing capacity per second: 450 entries
+2025-06-10 14:58:30,324 [main] INFO  org.jboss.weld.environment.servletWeldServlet - WELD-ENV-001009: org.jboss.weld.environment.servlet.Listener used for ServletRequest and HttpSession notifications
+2025-06-10 14:58:36,675 [main] INFO  org.jboss.weld.environment.servletWeldServlet - WELD-ENV-001008: Initialize Weld using ServletContainerInitializer
+2025-06-10 14:58:36,696 [main] INFO  org.jboss.weld.Version - WELD-000900: 3.1.1 (Final)
+2025-06-10 14:58:36,821 [main] INFO  org.jboss.weld.Bootstrap - WELD-ENV-000020: Using jandex for bean discovery
+2025-06-10 14:58:37,772 [main] INFO  org.jboss.weld.Bootstrap - WELD-000101: Transactional services not available. Injection of @Inject UserTransaction not available. Transactional observers will be invoked synchronously.
+2025-06-10 14:58:39,099 [main] INFO  org.jboss.weld.environment.servletTomcat - WELD-ENV-001100: Tomcat 7+ detected, CDI injection will be available in Servlets, Filters and Listeners.
+2025-06-10 14:58:40,560 [main] INFO  org.jboss.weld.environment.servletWeldServlet - WELD-ENV-001006: org.jboss.weld.environment.servlet.EnhancedListener used to initialize Weld
+2025-06-10 14:58:40,564 [main] INFO  org.openbravo.base.ConfigParameters - Properties file: /home/openbravo/servers/tomcat/webapps/openbravo//WEB-INF/Openbravo.properties
+2025-06-10 14:58:40,566 [main] INFO  org.openbravo.base.ConfigParameters - Checking override properties for LTP-W-MUM-5862
+2025-06-10 14:58:40,613 [main] INFO  org.openbravo.dal.core.DalLayerInitializer - Initializing in-memory model...
+2025-06-10 14:58:40,615 [main] INFO  org.openbravo.base.model.ModelProvider - Building runtime model
+2025-06-10 14:58:44,935 [main] ERROR org.openbravo.userinterface.selector.model.domaintype.SelectorDomainType - No selector definition found for reference org.openbravo.base.model.Reference [id: FFF20230427033632098DF1296A4248B, name: MLSN Institute Group List]
+2025-06-10 14:58:46,235 [main] ERROR org.openbravo.base.model.RefTable - Domain type of reference FFF20220806030639408CFFBAB4F4035 is not a TableDomainType but a org.openbravo.base.model.domaintype.BigDecimalDomainType$Number@4389dbe9
+2025-06-10 14:58:46,235 [main] ERROR org.openbravo.base.model.RefTable - Domain type of reference FFF20230427095630235DF070309AB5C is not a TableDomainType but a org.openbravo.base.model.domaintype.TableDirDomainType@20dd7202
+2025-06-10 14:58:46,529 [main] INFO  org.openbravo.base.model.ModelProvider - Retrieved modules
+2025-06-10 14:58:46,529 [main] INFO  org.openbravo.base.model.ModelProvider - - Module in.mbs.consumption
+2025-06-10 14:58:46,529 [main] INFO  org.openbravo.base.model.ModelProvider - - Module org.openbravo.idl
+2025-06-10 14:58:46,529 [main] INFO  org.openbravo.base.model.ModelProvider - - Module com.smf.smartclient.debugtools
+2025-06-10 14:58:46,529 [main] INFO  org.openbravo.base.model.ModelProvider - - Module in.mbs.payroll.master
+2025-06-10 14:58:46,529 [main] INFO  org.openbravo.base.model.ModelProvider - - Module in.mbs.as3integration3
+2025-06-10 14:58:46,529 [main] INFO  org.openbravo.base.model.ModelProvider - - Module in.mbs.phycashbal
+2025-06-10 14:58:46,529 [main] INFO  org.openbravo.base.model.ModelProvider - - Module in.mbs.etl
+2025-06-10 14:58:46,529 [main] INFO  org.openbravo.base.model.ModelProvider - - Module in.mbs.payroll.compliance
+2025-06-10 14:58:46,529 [main] INFO  org.openbravo.base.model.ModelProvider - - Module in.mbs.batchmaster
+2025-06-10 14:58:46,529 [main] INFO  org.openbravo.base.model.ModelProvider - - Module in.mbs.master
+2025-06-10 14:58:46,529 [main] INFO  org.openbravo.base.model.ModelProvider - - Module in.mbs.servicenrepair
+2025-06-10 14:58:46,529 [main] INFO  org.openbravo.base.model.ModelProvider - - Module in.mbs.taxmaster.template
+2025-06-10 14:58:46,529 [main] INFO  org.openbravo.base.model.ModelProvider - - Module in.mbs.camp
+2025-06-10 14:58:46,529 [main] INFO  org.openbravo.base.model.ModelProvider - - Module in.mbs.itdebit
+2025-06-10 14:58:46,529 [main] INFO  org.openbravo.base.model.ModelProvider - - Module in.mbs.uploadutility
+2025-06-10 14:58:46,530 [main] INFO  org.openbravo.base.model.ModelProvider - - Module in.mbs.qcinspection
+2025-06-10 14:58:46,530 [main] INFO  org.openbravo.base.model.ModelProvider - - Module in.mbs.pccontract
+2025-06-10 14:58:46,530 [main] INFO  org.openbravo.base.model.ModelProvider - - Module in.mbs.ctc
+2025-06-10 14:58:46,530 [main] INFO  org.openbravo.base.model.ModelProvider - - Module in.mbs.finpayment
+2025-06-10 14:58:46,530 [main] INFO  org.openbravo.base.model.ModelProvider - - Module org.openbravo.localization.india.utils
+2025-06-10 14:58:46,530 [main] INFO  org.openbravo.base.model.ModelProvider - - Module in.mbs.doctypesequence
+2025-06-10 14:58:46,530 [main] INFO  org.openbravo.base.model.ModelProvider - - Module in.mbs.rent
+2025-06-10 14:58:46,530 [main] INFO  org.openbravo.base.model.ModelProvider - - Module in.mbs.vetcoins
+2025-06-10 14:58:46,530 [main] INFO  org.openbravo.base.model.ModelProvider - - Module org.openbravo.module.idljava
+2025-06-10 14:58:46,530 [main] INFO  org.openbravo.base.model.ModelProvider - - Module in.mbs.physicalstock
+2025-06-10 14:58:46,530 [main] INFO  org.openbravo.base.model.ModelProvider - - Module in.mbs.materialmgmt
+2025-06-10 14:58:46,530 [main] INFO  org.openbravo.base.model.ModelProvider - - Module in.mbs.materialmgmt.template
+2025-06-10 14:58:46,530 [main] INFO  org.openbravo.base.model.ModelProvider - - Module org.openbravo.service.integration.amazon.s3
+2025-06-10 14:58:46,530 [main] INFO  org.openbravo.base.model.ModelProvider - - Module in.mbs.artracker
+2025-06-10 14:58:46,530 [main] INFO  org.openbravo.base.model.ModelProvider - - Module in.mbs.invoice.template
+2025-06-10 14:58:46,530 [main] INFO  org.openbravo.base.model.ModelProvider - - Module in.mbs.wpl
+2025-06-10 14:58:46,530 [main] INFO  org.openbravo.base.model.ModelProvider - - Module org.openbravo.service.reporting.barcode
+2025-06-10 14:58:46,530 [main] INFO  org.openbravo.base.model.ModelProvider - - Module in.mbs.integrationcsvsftp
+2025-06-10 14:58:46,530 [main] INFO  org.openbravo.base.model.ModelProvider - - Module in.mbs.printdoc
+2025-06-10 14:58:46,530 [main] INFO  org.openbravo.base.model.ModelProvider - - Module in.mbs.accounteffect.template
+2025-06-10 14:58:46,530 [main] INFO  org.openbravo.base.model.ModelProvider - - Module in.mbs.expence
+2025-06-10 14:58:46,530 [main] INFO  org.openbravo.base.model.ModelProvider - - Module in.mbs.tms
+2025-06-10 14:58:46,530 [main] INFO  org.openbravo.base.model.ModelProvider - - Module in.mbs.asn
+2025-06-10 14:58:46,530 [main] INFO  org.openbravo.base.model.ModelProvider - - Module in.mbs.security.access
+2025-06-10 14:58:46,530 [main] INFO  org.openbravo.base.model.ModelProvider - - Module in.mbs.wms
+2025-06-10 14:58:46,530 [main] INFO  org.openbravo.base.model.ModelProvider - - Module org.openbravo.localization.india.referencedata.coa_generic
+2025-06-10 14:58:46,530 [main] INFO  org.openbravo.base.model.ModelProvider - - Module in.mbs.financemaster.template
+2025-06-10 14:58:46,531 [main] INFO  org.openbravo.base.model.ModelProvider - - Module com.smf.mobile.utils
+2025-06-10 14:58:46,531 [main] INFO  org.openbravo.base.model.ModelProvider - - Module org.openbravo.utility.opencsv
+2025-06-10 14:58:46,531 [main] INFO  org.openbravo.base.model.ModelProvider - - Module in.mbs.sdlc.team
+2025-06-10 14:58:46,531 [main] INFO  org.openbravo.base.model.ModelProvider - - Module in.mbs.pglogical
+2025-06-10 14:58:46,531 [main] INFO  org.openbravo.base.model.ModelProvider - - Module in.mbs.henkel
+2025-06-10 14:58:46,531 [main] INFO  org.openbravo.base.model.ModelProvider - - Module in.mbs.liaison
+2025-06-10 14:58:46,531 [main] INFO  org.openbravo.base.model.ModelProvider - - Module in.mbs.as2integration2
+2025-06-10 14:58:46,531 [main] INFO  org.openbravo.base.model.ModelProvider - - Module in.mbs.notification
+2025-06-10 14:58:46,531 [main] INFO  org.openbravo.base.model.ModelProvider - - Module in.mbs.cleartax
+2025-06-10 14:58:46,531 [main] INFO  org.openbravo.base.model.ModelProvider - - Module in.mbs.batchmaster.template
+2025-06-10 14:58:46,531 [main] INFO  org.openbravo.base.model.ModelProvider - - Module in.mbs.electricity
+2025-06-10 14:58:46,531 [main] INFO  org.openbravo.base.model.ModelProvider - - Module in.mbs.salesmis
+2025-06-10 14:58:46,531 [main] INFO  org.openbravo.base.model.ModelProvider - - Module in.mbs.hrms
+2025-06-10 14:58:46,531 [main] INFO  org.openbravo.base.model.ModelProvider - - Module in.mbs.mewa
+2025-06-10 14:58:46,531 [main] INFO  org.openbravo.base.model.ModelProvider - - Module in.mbs.dashboard
+2025-06-10 14:58:46,531 [main] INFO  org.openbravo.base.model.ModelProvider - - Module in.mbs.custreturn
+2025-06-10 14:58:46,531 [main] INFO  org.openbravo.base.model.ModelProvider - - Module in.mbs.rate
+2025-06-10 14:58:46,531 [main] INFO  org.openbravo.base.model.ModelProvider - - Module in.mbs.dnor
+2025-06-10 14:58:46,531 [main] INFO  org.openbravo.base.model.ModelProvider - - Module org.openbravo.bankstatement.importer.generic.csv
+2025-06-10 14:58:46,531 [main] INFO  org.openbravo.base.model.ModelProvider - - Module in.mbs.sdlc.module
+2025-06-10 14:58:46,531 [main] INFO  org.openbravo.base.model.ModelProvider - - Module in.mbs.common.lov
+2025-06-10 14:58:46,531 [main] INFO  org.openbravo.base.model.ModelProvider - - Module in.mbs.ftp
+2025-06-10 14:58:46,531 [main] INFO  org.openbravo.base.model.ModelProvider - - Module in.mbs.loan
+2025-06-10 14:58:46,531 [main] INFO  org.openbravo.base.model.ModelProvider - - Module in.mbs.exportdata
+2025-06-10 14:58:46,531 [main] INFO  org.openbravo.base.model.ModelProvider - - Module in.mbs.taxmaster
+2025-06-10 14:58:46,531 [main] INFO  org.openbravo.base.model.ModelProvider - - Module in.mbs.accounteffect
+2025-06-10 14:58:46,532 [main] INFO  org.openbravo.base.model.ModelProvider - - Module in.mbs.bom
+2025-06-10 14:58:46,532 [main] INFO  org.openbravo.base.model.ModelProvider - - Module in.mbs.ldap
+2025-06-10 14:58:46,532 [main] INFO  org.openbravo.base.model.ModelProvider - - Module in.mbs.mail.config
+2025-06-10 14:58:46,532 [main] INFO  org.openbravo.base.model.ModelProvider - - Module in.mbs.finpayment.template
+2025-06-10 14:58:46,532 [main] INFO  org.openbravo.base.model.ModelProvider - - Module in.mbs.movement
+2025-06-10 14:58:46,532 [main] INFO  org.openbravo.base.model.ModelProvider - - Module in.mbs.financemaster
+2025-06-10 14:58:46,532 [main] INFO  org.openbravo.base.model.ModelProvider - - Module org.openbravo
+2025-06-10 14:58:46,532 [main] INFO  org.openbravo.base.model.ModelProvider - - Module in.mbs.movement.template
+2025-06-10 14:58:46,532 [main] INFO  org.openbravo.base.model.ModelProvider - - Module in.mbs.core.modulescript
+2025-06-10 14:58:46,532 [main] INFO  org.openbravo.base.model.ModelProvider - - Module in.mbs.as2integration
+2025-06-10 14:58:46,532 [main] INFO  org.openbravo.base.model.ModelProvider - - Module in.mbs.gljournal
+2025-06-10 14:58:46,532 [main] INFO  org.openbravo.base.model.ModelProvider - - Module com.etendoerp.advpaymentmngt
+2025-06-10 14:58:46,532 [main] INFO  org.openbravo.base.model.ModelProvider - - Module org.openbravo.userinterface.smartclient
+2025-06-10 14:58:46,532 [main] INFO  org.openbravo.base.model.ModelProvider - - Module in.mbs.doctypesequence.template
+2025-06-10 14:58:46,532 [main] INFO  org.openbravo.base.model.ModelProvider - - Module in.mbs.sapintegration
+2025-06-10 14:58:46,532 [main] INFO  org.openbravo.base.model.ModelProvider - - Module in.mbs.grn
+2025-06-10 14:58:46,532 [main] INFO  org.openbravo.base.model.ModelProvider - - Module org.openbravo.client.kernel
+2025-06-10 14:58:46,532 [main] INFO  org.openbravo.base.model.ModelProvider - - Module com.smf.securewebservices
+2025-06-10 14:58:46,532 [main] INFO  org.openbravo.base.model.ModelProvider - - Module in.mbs.approval
+2025-06-10 14:58:46,532 [main] INFO  org.openbravo.base.model.ModelProvider - - Module in.mbs.invoice
+2025-06-10 14:58:46,532 [main] INFO  org.openbravo.base.model.ModelProvider - - Module in.mbs.integrationwebservice
+2025-06-10 14:58:46,532 [main] INFO  org.openbravo.base.model.ModelProvider - - Module in.mbs.order.template
+2025-06-10 14:58:46,532 [main] INFO  org.openbravo.base.model.ModelProvider - - Module in.mbs.order
+2025-06-10 14:58:46,532 [main] INFO  org.openbravo.base.model.ModelProvider - - Module in.mbs.mtcn
+2025-06-10 14:58:46,532 [main] INFO  org.openbravo.base.model.ModelProvider - - Module in.mbs.unicharmintegration
+2025-06-10 14:58:46,532 [main] INFO  org.openbravo.base.model.ModelProvider - - Module in.mbs.dispatch.template
+2025-06-10 14:58:46,532 [main] INFO  org.openbravo.base.model.ModelProvider - - Module in.mbs.dispatch
+2025-06-10 14:58:46,533 [main] INFO  org.openbravo.base.model.ModelProvider - - Module in.mbs.sdlc.migration
+2025-06-10 14:58:46,533 [main] INFO  org.openbravo.base.model.ModelProvider - - Module in.mbs.gljournal.template
+2025-06-10 14:58:46,533 [main] INFO  org.openbravo.base.model.ModelProvider - - Module in.pispl.inf
+2025-06-10 14:58:46,533 [main] INFO  org.openbravo.base.model.ModelProvider - - Module in.mbs.webservice
+2025-06-10 14:58:46,533 [main] INFO  org.openbravo.base.model.ModelProvider - - Module in.mbs.product.template
+2025-06-10 14:58:46,533 [main] INFO  org.openbravo.base.model.ModelProvider - - Module in.mbs.product
+2025-06-10 14:58:46,533 [main] INFO  org.openbravo.base.model.ModelProvider - - Module org.openbravo.client.htmlwidget
+2025-06-10 14:58:46,533 [main] INFO  org.openbravo.base.model.ModelProvider - - Module in.mbs.kpi
+2025-06-10 14:58:46,533 [main] INFO  org.openbravo.base.model.ModelProvider - - Module org.openbravo.service.datasource
+2025-06-10 14:58:46,533 [main] INFO  org.openbravo.base.model.ModelProvider - - Module org.openbravo.advpaymentmngt
+2025-06-10 14:58:46,533 [main] INFO  org.openbravo.base.model.ModelProvider - - Module org.openbravo.base.weld
+2025-06-10 14:58:46,533 [main] INFO  org.openbravo.base.model.ModelProvider - - Module org.openbravo.financial.paymentreport
+2025-06-10 14:58:46,533 [main] INFO  org.openbravo.base.model.ModelProvider - - Module org.openbravo.v3
+2025-06-10 14:58:46,533 [main] INFO  org.openbravo.base.model.ModelProvider - - Module com.etendoerp.legacy.advancedpaymentmngt
+2025-06-10 14:58:46,533 [main] INFO  org.openbravo.base.model.ModelProvider - - Module org.openbravo.reports.ordersawaitingdelivery
+2025-06-10 14:58:46,533 [main] INFO  org.openbravo.base.model.ModelProvider - - Module org.openbravo.client.querylist
+2025-06-10 14:58:46,533 [main] INFO  org.openbravo.base.model.ModelProvider - - Module org.openbravo.client.myob
+2025-06-10 14:58:46,533 [main] INFO  org.openbravo.base.model.ModelProvider - - Module com.smf.jobs.defaults
+2025-06-10 14:58:46,533 [main] INFO  org.openbravo.base.model.ModelProvider - - Module com.smf.smartclient.boostedui
+2025-06-10 14:58:46,533 [main] INFO  org.openbravo.base.model.ModelProvider - - Module in.mbs.supplierbill
+2025-06-10 14:58:46,533 [main] INFO  org.openbravo.base.model.ModelProvider - - Module in.mbs.hiseyeness
+2025-06-10 14:58:46,533 [main] INFO  org.openbravo.base.model.ModelProvider - - Module in.mbs.stock
+2025-06-10 14:58:46,533 [main] INFO  org.openbravo.base.model.ModelProvider - - Module org.openbravo.v3.framework
+2025-06-10 14:58:46,533 [main] INFO  org.openbravo.base.model.ModelProvider - - Module org.openbravo.service.json
+2025-06-10 14:58:46,533 [main] INFO  org.openbravo.base.model.ModelProvider - - Module org.openbravo.client.widgets
+2025-06-10 14:58:46,533 [main] INFO  org.openbravo.base.model.ModelProvider - - Module org.openbravo.service.integration.openid
+2025-06-10 14:58:46,533 [main] INFO  org.openbravo.base.model.ModelProvider - - Module com.smf.jobs
+2025-06-10 14:58:46,534 [main] INFO  org.openbravo.base.model.ModelProvider - - Module com.etendoerp.reportvaluationstock
+2025-06-10 14:58:46,534 [main] INFO  org.openbravo.base.model.ModelProvider - - Module org.openbravo.userinterface.selector
+2025-06-10 14:58:46,534 [main] INFO  org.openbravo.base.model.ModelProvider - - Module com.smf.userinterface.skin.legacy
+2025-06-10 14:58:46,534 [main] INFO  org.openbravo.base.model.ModelProvider - - Module in.mbs.phycalstock.template
+2025-06-10 14:58:46,534 [main] INFO  org.openbravo.base.model.ModelProvider - - Module org.openbravo.v3.datasets
+2025-06-10 14:58:46,534 [main] INFO  org.openbravo.base.model.ModelProvider - - Module org.openbravo.userinterface.skin.250to300Comp
+2025-06-10 14:58:46,534 [main] INFO  org.openbravo.base.model.ModelProvider - - Module org.openbravo.apachejdbcconnectionpool
+2025-06-10 14:58:46,534 [main] INFO  org.openbravo.base.model.ModelProvider - - Module org.openbravo.utility.cleanup.log
+2025-06-10 14:58:46,534 [main] INFO  org.openbravo.base.model.ModelProvider - - Module org.openbravo.client.application
+2025-06-10 14:58:46,534 [main] INFO  org.openbravo.base.model.ModelProvider - - Module org.openbravo.service.integration.google
+2025-06-10 14:58:46,534 [main] INFO  org.openbravo.base.model.ModelProvider - - Module in.mbs.p2productmaster
+2025-06-10 14:58:46,534 [main] INFO  org.openbravo.base.model.ModelProvider - - Module com.openbravo.gps.idl.invoices
+2025-06-10 14:58:46,534 [main] INFO  org.openbravo.base.model.ModelProvider - - Module in.mbs.classicaltutorials
+2025-06-10 14:58:46,534 [main] INFO  org.openbravo.base.model.ModelProvider - - Module in.mbs.indentmrf
+2025-06-10 14:58:46,534 [main] INFO  org.openbravo.base.model.ModelProvider - - Module in.mbs.p2ppurchaseorder
+2025-06-10 14:58:46,534 [main] INFO  org.openbravo.base.model.ModelProvider - - Module in.mbs.p2pgrn
+2025-06-10 14:58:46,534 [main] INFO  org.openbravo.base.model.ModelProvider - - Module in.mbs.p2pinvoice
+2025-06-10 14:58:46,534 [main] INFO  org.openbravo.base.model.ModelProvider - - Module in.mbs.p2pconsumption
+2025-06-10 14:58:46,534 [main] INFO  org.openbravo.base.model.ModelProvider - - Module in.mbs.p2pconsumption.template
+2025-06-10 14:58:46,534 [main] INFO  org.openbravo.base.model.ModelProvider - - Module in.mbs.printdoc.template
+2025-06-10 14:58:46,534 [main] INFO  org.openbravo.base.model.ModelProvider - - Module in.mbs.master.template
+2025-06-10 14:58:47,521 [main] ERROR org.openbravo.base.model.NamingUtil - ERROR: Property name computation fails for property mnor_opdata_tms.CH_Updated using new name updated there is more then one property with the same name, being robust and renaming property automatically. If this error appears during update.database then this is possibly solved automatically. Otherwise this should be repaired manually by changing the AD_Column.name of the column mnor_opdata_tms.CH_Updated
+2025-06-10 14:58:47,727 [main] INFO  org.openbravo.dal.core.DalLayerInitializer - Model read in-memory, generating mapping...
+2025-06-10 14:59:00,105 [Thread-4] INFO  org.quartz.core.QuartzScheduler - Scheduler DefaultQuartzScheduler_$_NON_CLUSTERED started.
+2025-06-10 14:59:03,658 [main] INFO  org.openbravo.base.provider.OBConfigFileProvider - Found provider config file /WEB-INF/org.openbravo.idl-provider-config.xml
+2025-06-10 14:59:03,665 [main] INFO  org.openbravo.base.provider.OBConfigFileProvider - Found provider config file /WEB-INF/in.mbs.camp-provider-config.xml
+2025-06-10 14:59:03,667 [main] INFO  org.openbravo.base.provider.OBConfigFileProvider - Found provider config file /WEB-INF/in.mbs.qcinspection-provider-config.xml
+2025-06-10 14:59:03,670 [main] INFO  org.openbravo.base.provider.OBConfigFileProvider - Found provider config file /WEB-INF/in.mbs.artracker-provider-config.xml
+2025-06-10 14:59:03,672 [main] INFO  org.openbravo.base.provider.OBConfigFileProvider - Found provider config file /WEB-INF/in.mbs.tms-provider-config.xml
+2025-06-10 14:59:03,675 [main] INFO  org.openbravo.base.provider.OBConfigFileProvider - Found provider config file /WEB-INF/in.mbs.wms-provider-config.xml
+2025-06-10 14:59:03,678 [main] INFO  org.openbravo.base.provider.OBConfigFileProvider - Found provider config file /WEB-INF/com.smf.mobile.utils-provider-config.xml
+2025-06-10 14:59:03,680 [main] INFO  org.openbravo.base.provider.OBConfigFileProvider - Found provider config file /WEB-INF/in.mbs.henkel-provider-config.xml
+2025-06-10 14:59:03,681 [main] INFO  org.openbravo.base.provider.OBConfigFileProvider - Found provider config file /WEB-INF/in.mbs.as2integration2-provider-config.xml
+2025-06-10 14:59:03,682 [main] INFO  org.openbravo.base.provider.OBConfigFileProvider - Found provider config file /WEB-INF/in.mbs.dashboard-provider-config.xml
+2025-06-10 14:59:03,684 [main] INFO  org.openbravo.base.provider.OBConfigFileProvider - Found provider config file /WEB-INF/in.mbs.dnor-provider-config.xml
+2025-06-10 14:59:03,685 [main] INFO  org.openbravo.base.provider.OBConfigFileProvider - Found provider config file /WEB-INF/in.mbs.exportdata-provider-config.xml
+2025-06-10 14:59:03,687 [main] INFO  org.openbravo.base.provider.OBConfigFileProvider - Found provider config file /WEB-INF/com.smf.securewebservices-provider-config.xml
+2025-06-10 14:59:03,689 [main] INFO  org.openbravo.base.provider.OBConfigFileProvider - Found provider config file /WEB-INF/in.mbs.integrationwebservice-provider-config.xml
+2025-06-10 14:59:03,690 [main] INFO  org.openbravo.base.provider.OBConfigFileProvider - Found provider config file /WEB-INF/in.mbs.webservice-provider-config.xml
+2025-06-10 14:59:03,695 [main] WARN  org.openbravo.base.provider.OBProviderConfigReader - Class in.mbs.webservice.WMobileJobListRequest can not be loaded. This can happen when rebuilding after installing new modules. The system needs to be restarted to find new services
+2025-06-10 14:59:03,696 [main] WARN  org.openbravo.base.provider.OBProviderConfigReader - Class in.mbs.webservice.WMobileTask can not be loaded. This can happen when rebuilding after installing new modules. The system needs to be restarted to find new services
+2025-06-10 14:59:03,696 [main] WARN  org.openbravo.base.provider.OBProviderConfigReader - Class in.mbs.webservice.WMobileJoblistDetails can not be loaded. This can happen when rebuilding after installing new modules. The system needs to be restarted to find new services
+2025-06-10 14:59:03,697 [main] WARN  org.openbravo.base.provider.OBProviderConfigReader - Class in.mbs.webservice.WPutAwayJobInsert can not be loaded. This can happen when rebuilding after installing new modules. The system needs to be restarted to find new services
+2025-06-10 14:59:03,697 [main] WARN  org.openbravo.base.provider.OBProviderConfigReader - Class in.mbs.webservice.WMobileGetBatch can not be loaded. This can happen when rebuilding after installing new modules. The system needs to be restarted to find new services
+2025-06-10 14:59:03,698 [main] WARN  org.openbravo.base.provider.OBProviderConfigReader - Class in.mbs.webservice.WMobileGetFromWhPutAway can not be loaded. This can happen when rebuilding after installing new modules. The system needs to be restarted to find new services
+2025-06-10 14:59:03,698 [main] WARN  org.openbravo.base.provider.OBProviderConfigReader - Class in.mbs.webservice.LDAPPasswordMangementWebservice can not be loaded. This can happen when rebuilding after installing new modules. The system needs to be restarted to find new services
+2025-06-10 14:59:03,699 [main] WARN  org.openbravo.base.provider.OBProviderConfigReader - Class in.mbs.webservice.BoldBIDemo can not be loaded. This can happen when rebuilding after installing new modules. The system needs to be restarted to find new services
+2025-06-10 14:59:03,700 [main] WARN  org.openbravo.base.provider.OBProviderConfigReader - Class in.mbs.webservice.BOBC_Booking can not be loaded. This can happen when rebuilding after installing new modules. The system needs to be restarted to find new services
+2025-06-10 14:59:03,700 [main] WARN  org.openbravo.base.provider.OBProviderConfigReader - Class in.mbs.webservice.BOBC_Tracking can not be loaded. This can happen when rebuilding after installing new modules. The system needs to be restarted to find new services
+2025-06-10 14:59:03,701 [main] INFO  org.openbravo.base.provider.OBConfigFileProvider - Found provider config file /WEB-INF/com.smf.jobs-provider-config.xml
+2025-06-10 14:59:03,729 [main] INFO  org.openbravo.dal.core.DalLayerInitializer - Dal layer initialized
+2025-06-10 14:59:03,812 [main] INFO  org.openbravo.client.application.window.ApplicationDictionaryCachedStructures - ADCS initialized, use cache: true
+2025-06-10 14:59:03,817 [main] INFO  org.openbravo.client.application.report.CompiledReportManager - CompiledReportManager initialized, use cache: true
+2025-06-10 14:59:04,163 [main] INFO  org.openbravo.base.OBSchedulerInitializerListener - Quartz Initializer Servlet loaded, initializing Scheduler...
+2025-06-10 14:59:04,227 [main] INFO  org.quartz.impl.StdSchedulerFactory - Using default implementation for ThreadExecutor
+2025-06-10 14:59:04,230 [main] INFO  org.quartz.simpl.SimpleThreadPool - Job execution threads will use class loader of thread: main
+2025-06-10 14:59:04,246 [main] INFO  org.quartz.core.SchedulerSignalerImpl - Initialized Scheduler Signaller of type: class org.quartz.core.SchedulerSignalerImpl
+2025-06-10 14:59:04,246 [main] INFO  org.quartz.core.QuartzScheduler - Quartz Scheduler v.2.3.2 created.
+2025-06-10 14:59:04,247 [main] INFO  org.quartz.simpl.RAMJobStore - RAMJobStore initialized.
+2025-06-10 14:59:04,248 [main] INFO  org.quartz.core.QuartzScheduler - Scheduler meta-data: Quartz Scheduler (v2.3.2) 'DefaultQuartzScheduler' with instanceId 'NON_CLUSTERED'
+  Scheduler class: 'org.quartz.core.QuartzScheduler' - running locally.
+  NOT STARTED.
+  Currently in standby mode.
+  Number of jobs executed: 0
+  Using thread pool 'org.quartz.simpl.SimpleThreadPool' - with 10 threads.
+  Using job-store 'org.quartz.simpl.RAMJobStore' - which does not support persistence. and is not clustered.
+
+2025-06-10 14:59:04,248 [main] INFO  org.quartz.impl.StdSchedulerFactory - Quartz scheduler 'DefaultQuartzScheduler' initialized from the specified file : 'quartz.properties' from the class resource path.
+2025-06-10 14:59:04,248 [main] INFO  org.quartz.impl.StdSchedulerFactory - Quartz scheduler version: 2.3.2
+2025-06-10 14:59:04,252 [main] INFO  org.openbravo.base.OBSchedulerInitializerListener - Scheduler will start in 30 seconds.
+2025-06-10 14:59:04,252 [main] INFO  org.openbravo.base.OBSchedulerInitializerListener - Storing the Quartz Scheduler Factory in the servlet context at key: org.quartz.impl.StdSchedulerFactory.KEY
+2025-06-10 14:59:04,252 [main] INFO  org.openbravo.base.OBSchedulerInitializerListener - Storing ConfigParameters and ConnectionProvider in Scheduler Context.
+2025-06-10 14:59:04,252 [main] INFO  org.openbravo.base.OBSchedulerInitializerListener - Initalizing singleton instance of org.openbravo.scheduling.OBScheduler
+2025-06-10 14:59:04,713 [main] INFO  org.openbravo.service.importprocess.ImportEntryManager - Import entry manager settings
+2025-06-10 14:59:04,713 [main] INFO  org.openbravo.service.importprocess.ImportEntryManager -   batch size: 5000
+2025-06-10 14:59:04,713 [main] INFO  org.openbravo.service.importprocess.ImportEntryManager -   number of threads: 15
+2025-06-10 14:59:04,713 [main] INFO  org.openbravo.service.importprocess.ImportEntryManager -   task queue size: 1000
+2025-06-10 14:59:04,713 [main] INFO  org.openbravo.service.importprocess.ImportEntryManager -   wait time: 600000 sec
+2025-06-10 14:59:04,713 [main] INFO  org.openbravo.service.importprocess.ImportEntryManager -   processing capacity per second: 450 entries
+2025-06-10 14:59:04,723 [main] INFO  org.jboss.weld.environment.servletWeldServlet - WELD-ENV-001009: org.jboss.weld.environment.servlet.Listener used for ServletRequest and HttpSession notifications
+2025-06-10 14:59:18,930 [http-nio-8080-exec-5] INFO  org.openbravo.erpCommon.obps.ActivationKey - Loading activation key from DB
+2025-06-10 14:59:34,252 [Thread-8] INFO  org.quartz.core.QuartzScheduler - Scheduler DefaultQuartzScheduler_$_NON_CLUSTERED started.
+2025-06-10 15:07:43,502 [DefaultQuartzScheduler_Worker-9] ERROR in.mbs.doctypesequence.utilities.SeqEntityUtility - Error in EntityUtility class while fetching entities
+2025-06-10 15:07:43,502 [DefaultQuartzScheduler_Worker-9] ERROR in.mbs.doctypesequence.utilities.SeqEntityUtility - Error in EntityUtility class while fetching entities

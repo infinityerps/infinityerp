@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--
+*************************************************************************
+* The contents of this file are subject to the Openbravo  Public  License
+* Version  1.1  (the  "License"),  being   the  Mozilla   Public  License
+* Version 1.1  with a permitted attribution clause; you may not  use this
+* file except in compliance with the License. You  may  obtain  a copy of
+* the License at http://www.openbravo.com/legal/license.html 
+* Software distributed under the License  is  distributed  on  an "AS IS"
+* basis, WITHOUT WARRANTY OF ANY KIND, either express or implied. See the
+* License for the specific  language  governing  rights  and  limitations
+* under the License. 
+* The Original Code is Openbravo ERP. 
+* The Initial Developer of the Original Code is Openbravo SLU 
+* All portions are Copyright (C) 2001-2006 Openbravo SLU 
+* All Rights Reserved. 
+* Contributor(s):  ______________________________________.
+************************************************************************
+-->
+<REPORT>
+  <template file="exportdatambs.html"/>
+<PARAMETER id="paramToolBar" name="toolbar" default=""/>
+  <PARAMETER id="paramMessage" name="paramMessage" attribute="onload" replace="xx();"/>
+  <PARAMETER id="fieldCalendar" name="calendar" attribute="src" replace="es" default="en"/>
+  <PARAMETER id="paramDirectory" name="directory" default=""/>
+  <PARAMETER id="paramLanguage" name="paramLanguage" default=""/>
+  <PARAMETER id="mexdReportName" name="mexdReportName" default=""/>
+   <PARAMETER id="mexdDynamicpara" name="mexdDynamicpara" default=""/>
+<PARAMETER id="MexdDynamicbuttonheading" name="MexdDynamicbuttonheading" default=""/>
+<PARAMETER id="mexdDynamicbutton" name="mexdDynamicbutton" default=""/>
+
+<PARAMETER id="inpemexReportcatId" name="inpemexReportcatId" default=""/>
+  <SUBREPORT id="reportMEXD_Reportcat" name="reportMEXD_Reportcat" report="org/openbravo/erpCommon/reference/List">
+    <ARGUMENT name="parameterListSelected" withId="inpemexReportcatId"/>
+  </SUBREPORT>
+<PARAMETER id="inpemexReportsubcatId" name="inpemexReportsubcatId" default=""/>
+  <SUBREPORT id="reportMEXD_Reportsubcat" name="reportMEXD_Reportsubcat" report="org/openbravo/erpCommon/reference/List">
+    <ARGUMENT name="parameterListSelected" withId="inpemexReportsubcatId"/>
+  </SUBREPORT>
+  <PARAMETER id="paramreportarray" name="paramreportarray"/>
+  <PARAMETER id="paramreportsubcatarray" name="paramreportsubcatarray"/>
+    
+<PARAMETER id="mexdDynamicgrid" name="mexdDynamicgrid" default=""/>
+  <PARAMETER id="inpemexReportConfigId" name="MEXDReportConfig" default=""/>
+  <SUBREPORT id="reportMEXD_ReportConfig" name="reportMEXD_ReportConfig" report="org/openbravo/erpCommon/reference/List">
+    <ARGUMENT name="parameterListSelected" withId="inpemexReportConfigId"/>
+  </SUBREPORT>
+<PARAMETER id="param0" name="Param0" default="0"/>
+  <PARAMETER id="paramCSS" name="theme" attribute="href" replace="Default"/>
+  <PARAMETER id="tdleftTabs" name="leftTabs" default=""/>
+  <PARAMETER id="paramParentTabContainer" name="parentTabContainer" default=" "/>
+  <PARAMETER id="paramMainTabContainer" name="mainTabContainer" default=" "/>
+  <PARAMETER id="paramChildTabContainer" name="childTabContainer" default=" "/>
+  <PARAMETER id="tdtopButtons" name="navigationBar" default=""/>
+  <PARAMETER id="messageBoxID" name="messageType" attribute="class" replace="yy" default="HIDDEN"/>
+  <PARAMETER id="messageBoxIDTitle" name="messageTitle" default=""/>
+  <PARAMETER id="messageBoxIDMessage" name="messageMessage" default=""/>
+
+</REPORT>

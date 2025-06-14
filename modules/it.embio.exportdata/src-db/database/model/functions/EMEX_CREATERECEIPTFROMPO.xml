@@ -1,0 +1,91 @@
+<?xml version="1.0"?>
+  <database name="FUNCTION EMEX_CREATERECEIPTFROMPO">
+    <function name="EMEX_CREATERECEIPTFROMPO" type="NULL">
+      <body><![CDATA[v_warehouse_id VARCHAR(32);
+v_locator_id VARCHAR(32);
+v_org_id VARCHAR(32);
+v_doctype_id VARCHAR(32);
+v_client_id VARCHAR(32);
+BEGIN
+
+
+	
+	create temp table temp_inout(
+		m_inout_id VARCHAR(32),
+		c_order_id VARCHAR(32),
+		ad_pinstance_id VARCHAR(32)
+	);
+	Insert into temp_inout
+	select get_uuid(),o.c_order_id,get_uuid()
+	from c_order o
+	left join m_inout m on m.issotrx='N' and m.c_order_id=o.c_order_id
+	where o.issotrx='N'
+	and m.m_inout_id is null
+	and o.docstatus='CO';
+
+	select m_warehouse_id INTO v_warehouse_id from m_warehouse where value='LO 001';
+
+	SELECT m_locator_id,ad_org_id,ad_client_id
+	INTO v_locator_id,v_org_id,v_client_id
+	FROM m_locator
+	WHERE m_warehouse_id=v_warehouse_id
+	ORDER by priorityno
+	LIMIT 1;
+	
+	select c_doctype_id into v_doctype_id from c_doctype where docbasetype='MMR' and name='Incoming Shipments';
+	
+
+
+	INSERT INTO m_inout(
+            m_inout_id, ad_client_id, ad_org_id, isactive, created, createdby, 
+            updated, updatedby, issotrx, documentno, docaction, docstatus, 
+            posted, processing, processed, c_doctype_id, description,
+            dateordered, isprinted, movementtype, movementdate, dateacct, 
+            c_bpartner_id, c_bpartner_location_id, m_warehouse_id, poreference, 
+            deliveryrule, freightcostrule, freightamt, deliveryviarule, 
+            chargeamt, priorityrule, updatelines, islogistic, generatelines,c_order_id,poreference)
+	select  i.m_inout_id, o.ad_client_id, o.ad_org_id, 'Y', current_timestamp, o.updatedby, 
+            current_timestamp, o.updatedby, o.issotrx, ad_sequence_doctype(v_doctype_id, 'null', 'Y'), 'CO', 'DR', 
+            'N', 'N', 'N', v_doctype_id, o.description,
+            o.dateordered, 'N', 'V+', current_timestamp, current_timestamp, 
+            o.c_bpartner_id, o.c_bpartner_location_id, v_warehouse_id, o.poreference, 
+            o.deliveryrule, o.freightcostrule, o.freightamt, o.deliveryviarule, 
+            o.chargeamt, o.priorityrule, 'N', 'N', 'N',o.c_order_id,o.poreference
+	from temp_inout i
+	inner join c_order o on o.c_order_id=i.c_order_id;
+	
+	IF NOT EXISTS (select 1 from m_inout where m_inout_id in (select m_inout_id from temp_inout))
+	THEN
+		raise exception 'data not insert!';
+	END IF;
+
+
+	INSERT INTO m_inoutline(
+	m_inoutline_id, ad_client_id, ad_org_id, isactive, created, createdby, 
+	updated, updatedby, line, description, m_inout_id, c_orderline_id, 
+	m_locator_id, m_product_id, c_uom_id, movementqty, isinvoiced, 
+	m_attributesetinstance_id, explode)
+	SELECT
+	get_uuid(), l.ad_client_id, l.ad_org_id, 'Y', current_timestamp, l.updatedby, 
+	current_timestamp, l.updatedby, (row_number() over (order by l.created))*10, l.description, i.m_inout_id, l.c_orderline_id, 
+	v_locator_id, l.m_product_id, l.c_uom_id, l.qtyordered, 'N', 
+	l.m_attributesetinstance_id, 'N'
+	from temp_inout i
+	inner join c_orderline l on l.c_order_id=i.c_order_id;
+
+
+
+    		insert into ad_pinstance (ad_pinstance_id, ad_process_id, record_id, created, ad_user_id, 
+			     updated, ad_client_id, ad_org_id, createdby, updatedby, isactive)
+    		select ad_pinstance_id, '109', i.m_inout_id, current_timestamp, o.updatedby,
+            	current_timestamp, o.ad_client_id, o.ad_org_id, o.updatedby, o.updatedby, 'Y'
+				from temp_inout i
+				inner join c_order o on o.c_order_id=i.c_order_id;
+            
+    	 M_INOUT_POST0(ad_pinstance_id)
+		 FROM temp_inout;	
+	drop table temp_inout;
+END EMEX_CREATERECEIPTFROMPO
+]]></body>
+    </function>
+  </database>

@@ -1,0 +1,231 @@
+<!--
+ *************************************************************************
+ * The contents of this file are subject to the Openbravo  Public  License
+ * Version  1.1  (the  "License"),  being   the  Mozilla   Public  License
+ * Version 1.1  with a permitted attribution clause; you may not  use this
+ * file except in compliance with the License. You  may  obtain  a copy of
+ * the License at http://www.openbravo.com/legal/license.html 
+ * Software distributed under the License  is  distributed  on  an "AS IS"
+ * basis, WITHOUT WARRANTY OF ANY KIND, either express or implied. See the
+ * License for the specific  language  governing  rights  and  limitations
+ * under the License. 
+ * The Original Code is Openbravo ERP. 
+ * The Initial Developer of the Original Code is Openbravo SLU 
+ * All portions are Copyright (C) 2010-2024 Openbravo SLU 
+ * All Rights Reserved. 
+ * Contributor(s):  ______________________________________.
+ ************************************************************************
+-->
+
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>InfinityERP</title>
+<link rel="shortcut icon" href="../../../../../web/images/favicon.ico" type="image/x-icon" id="favicon" />
+<link rel="stylesheet" type="text/css" href="../../../../../web/skins/Default/loginStyles.css" id="paramCSS" />
+<script type="text/javascript" src="../../../../../web/js/login.js" type="text/javascript"></script>
+<script type="text/javascript" src="../../../../../web/js/utils.js" type="text/javascript"></script>
+<script type="text/javascript" src="../../../../../web/js/windowKeyboard.js" type="text/javascript"></script>
+<script type="text/javascript" src="../utility/CheckCleanCache.js?cache=true" type="text/javascript"></script>
+<script type="text/javascript" src="../utility/CheckCleanCache.js?cache=false" type="text/javascript"></script>
+<script type="text/javascript" id="visualPrefs">var showCompanyLogo = true, showSupportLogo = true, urlCompany = 'http://www.openbravo.com/', urlSupport = 'http://support.openbravo.com/';/* Parameters retreived from Login.java */</script>
+<script type="text/javascript" id="expirationMessage"></script>
+<script type="text/javascript" id="cacheMsg">var cacheMsg = 'xx';</script>
+<script type="text/javascript" id="validBrowserMsg">var validBrowserMsg = 'xx';</script>
+<script type="text/javascript" id="validBrowserMsgOrHigher">var validBrowserMsgOrHigher = 'xx';</script>
+<script type="text/javascript" id="recBrowserMsgTitle">var recBrowserMsgTitle = 'xx';</script>
+<script type="text/javascript" id="recBrowserMsgText">var recBrowserMsgText = 'xx';</script>
+<script type="text/javascript" id="identificationFailureTitle">var identificationFailureTitle = 'xx';</script>
+<script type="text/javascript" id="errorEmptyContent">var errorEmptyContent = 'xx';</script>
+<script type="text/javascript" id="errorSamePassword">var errorSamePassword = 'xx';</script>
+<script type="text/javascript" id="errorDifferentPasswordInFields">var errorDifferentPasswordInFields = 'xx';</script>
+
+<script type="text/javascript">
+
+var validBrowserVersions = {
+		firefox: '102.0.0.0', 
+		chrome: '119.0.0.0',
+		edge: '119.0.0.0',      // Starting Jan-2020: Chromium version
+		safari: '16.2.0.0',
+};
+
+var recBrowserVersions = {
+		firefox: '115.0.0.0',
+		chrome: '121.0.0.0',
+		edge: '121.0.0.0',      // Starting Jan-2020: Chromium version
+		safari: '16.7.0.0',
+};
+
+// currentRevision must be the same value as the one returned by getCurrentRevision() (see utils.js)
+var currentRevision = '35328';
+
+beforeLoadDo();
+</script>
+
+</head>
+  <style>
+    body {
+      margin: 0;
+      font-family: 'Segoe UI', sans-serif;
+      height: 100vh;
+      display: flex;
+      overflow: hidden;
+    }
+    .left-section {
+      flex: 1;
+      padding: 80px;
+      background-color: #fff;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      z-index: 2;
+    }
+    .left-section h1 {
+      font-size: 36px;
+      color: #2c3e50;
+      margin-bottom: 10px;
+    }
+    .left-section p {
+      font-size: 18px;
+      color: #555;
+      margin-bottom: 40px;
+    }
+    .left-section img {
+      width: 500px;
+    }
+    .right-section-wrapper {
+      position: relative;
+      flex: 1;
+      overflow: hidden;
+    }
+    .right-section {
+      background-color: #2c3e90;
+      position: absolute;
+      top: 0;
+      right: 0;
+      bottom: 0;
+      left: -10%;
+      clip-path: ellipse(75% 100% at 100% 80%);
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      padding: 100px 60px;
+      color: white;
+      z-index: 1;
+    }
+    .form-container {
+      z-index: 3;
+      position: relative;
+      max-width: 500px;
+      margin-left: auto;
+      margin-right: 60px;
+    }
+    .Login_LabelText {
+      margin: 10px 0 5px;
+      display: block;
+    }
+    .Login_TextBox {
+      width: 100%;
+      padding: 10px;
+      font-size: 16px;
+      border-radius: 4px;
+      border: 1px solid #ccc;
+      margin-bottom: 20px;
+    }
+    .button-container {
+      text-align: right;
+    }
+    .ButtonLink {
+      background: #f1c40f !important;
+      color: #fff !important;
+      padding: 10px 20px !important;
+      border-radius: 5px !important;
+    }
+    .forgot {
+      color: #f1f1f1;
+      font-size: 14px;
+      text-decoration: underline;
+      cursor: pointer;
+      margin-bottom: 20px;
+    }
+    label {
+  display: inline-block;
+  width: 120px; /* Adjust width to align all labels */
+  text-align: right;
+  margin-right: 10px; /* Spacing between label and input */
+}
+
+input[type="text"],
+input[type="password"] {
+  width: 200px; /* Or desired width */
+  padding: 6px;
+  box-sizing: border-box;
+  border-radius: 50px;
+}
+input[type="button"] {
+  margin-left: 130px; /* width of label (120px) + margin (10px) */
+  padding: 6px 16px;
+}
+  </style>
+<body onload="onLoadDo();">
+  <div class="left-section">
+    <div>
+      <h1>Welcome to Infinity ERP</h1>
+      <p>Elevate your business with our ERP software</p>
+      <img src="../../../../../web/images/erpimage.png" alt="ERP Illustration">
+    </div>
+  </div>
+  <div class="right-section-wrapper">
+    <div class="right-section">
+    <div class="form-container">
+        <form method="post" action="../secureApp/LoginHandler.html" name="frmIdentificacion" id="frmFormulario" autocomplete="off">
+          <input type="hidden" name="Command" value="" />
+          <input type="hidden" name="resetPassword" id="resetPassword" value="" />
+
+          <div class="Login_LogForm_Input_Container">
+            <dl>
+              <dt>
+                <label for="user" class="Login_LabelText" id="userlabel" >User Name</label>
+              </dt>
+              <dt>
+                <label for="user" class="Login_LabelText" id="newpasswordlabel" style="display:none;">New Password</label>
+              </dt>
+              <dd>
+                <input class="dojoValidateValid Login_TextBox" type="text" maxlength="60" name="user" id="user" />
+              </dd>
+              <dt>
+                <label for="password" class="Login_LabelText" id="passwordlabel" >Password</label>
+              </dt>
+              <dt>
+                <label for="password" class="Login_LabelText" id="confirmpasswordlabel" style="display:none;">Confirm Password</label>
+              </dt>
+              <dd>
+                <input class="dojoValidateValid Login_TextBox" type="password" class="Login_TextBox"  maxlength="40" name="password" id="password" />
+              </dd>
+            </dl>
+            <div id="errorMsg" class="LabelText Login_ErrorMsg_Container" style="display:none;">
+              <span id="errorMsgTitle_Container"><span id="errorMsgTitle" class="Login_ErrorMsg_Title">xx</span><br></span><span id="errorMsgContent" class="Login_ErrorMsg_Content">xx</span>
+            </div>
+          </div>
+        </form>
+        
+            <button type="button" 
+              id="buttonOK" 
+              class="ButtonLink" 
+              onclick="doLogin();" 
+              onfocus="buttonEvent('onfocus', this); window.status='Login'; return true;" 
+              onblur="buttonEvent('onblur', this);" 
+              onkeyup="buttonEvent('onkeyup', this);" 
+              onkeydown="buttonEvent('onkeydown', this);" 
+              onkeypress="buttonEvent('onkeypress', this);" 
+              onmouseup="buttonEvent('onmouseup', this);" 
+              onmousedown="buttonEvent('onmousedown', this);" 
+              onmouseout="buttonEvent('onmouseout', this);">
+              Log in
+            </button>
+      
+</div>
+</div>
+</div>
+</body>
+</html>

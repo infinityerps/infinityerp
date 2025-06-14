@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+
+<SqlClass name="ReportConfigListData" package="it.embio.exportdata.ad_forms">
+  <SqlClassComment></SqlClassComment>
+       <SqlMethod name="selectreportcat" type="preparedStatement" return="multiple">
+    <Sql>
+    <![CDATA[
+      SELECT distinct a.emex_reportcategory_id AS ID, a.sName AS name
+      FROM emex_reportcategory a
+      INNER JOIN emex_reportaccess b on b.emex_reportcategory_id=a.emex_reportcategory_id
+      where b.AD_Role_ID=?    
+     ]]></Sql>
+	 <Field name="padre" value="void"/>
+	 <Parameter name="AD_Role_ID"/>
+    </SqlMethod>
+    
+     <SqlMethod name="selectreportcatadmin" type="preparedStatement" return="multiple">
+    <Sql>
+    <![CDATA[
+      SELECT a.emex_reportcategory_id AS ID, a.sName AS name
+      FROM emex_reportcategory a
+     ]]></Sql>
+	 </SqlMethod>
+    
+    <SqlMethod name="select" type="preparedStatement" return="multiple">
+    <SqlMethodComment></SqlMethodComment>
+    <Sql>
+    <![CDATA[
+      SELECT distinct a.emex_reportcategory_det_id as padre,a.emex_ReportConfig_id AS ID, a.sName AS name
+      FROM emex_ReportConfig a
+      INNER JOIN emex_reportaccess b on b.emex_ReportConfig_id=a.emex_ReportConfig_id
+      where b.AD_Role_ID=?
+    ]]></Sql>
+	<Parameter name="AD_Role_ID"/>
+    </SqlMethod>
+   
+   <SqlMethod name="selectadmin" type="preparedStatement" return="multiple">
+    <SqlMethodComment></SqlMethodComment>
+    <Sql>
+    <![CDATA[
+      SELECT a.emex_reportcategory_det_id as padre,a.emex_ReportConfig_id AS ID, a.sName AS name
+      FROM emex_ReportConfig a
+          
+     ]]></Sql>
+      </SqlMethod>
+      <SqlMethod name="selectreportsubcat" type="preparedStatement" return="multiple">
+      <Sql>
+    <![CDATA[
+      SELECT distinct a.emex_reportcategory_id as padre,a.emex_reportcategory_det_id AS id, a.sName AS name
+      FROM emex_reportcategory_det a
+      INNER JOIN emex_reportaccess b on b.emex_reportcategory_det_id=a.emex_reportcategory_det_id
+      where b.AD_Role_ID=?
+     ]]></Sql>
+	<Parameter name="AD_Role_ID"/>
+    </SqlMethod>
+     <SqlMethod name="selectreportsubcatadmin" type="preparedStatement" return="multiple">
+      <Sql>
+    <![CDATA[
+      SELECT a.emex_reportcategory_id as padre,a.emex_reportcategory_det_id AS id, a.sName AS name
+      FROM emex_reportcategory_det a
+     
+     ]]></Sql>
+	
+    </SqlMethod>
+    
+
+</SqlClass>
+

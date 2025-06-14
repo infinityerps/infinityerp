@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<SqlClass id="class" name="ProductData" package="org.openbravo.erpWindows.Product">
+  <SqlClassComment>WAD Generated class</SqlClassComment>
+
+  <SqlMethod name="dummy" type="preparedStatement" return="multiple">
+    <Sql>
+      SELECT '' AS dummy from DUAL
+    </Sql>
+  </SqlMethod>
+
+
+
+
+
+
+   <SqlMethod name="selectActDefM_Product_Id" type="preparedStatement" return="String" default="">
+    <SqlMethodComment>Select for action search</SqlMethodComment>
+    <Sql><![CDATA[
+        SELECT Name FROM M_Product WHERE isActive='Y' AND M_Product_ID = ?  
+    ]]></Sql>
+    <Parameter name="M_Product_Id"/>
+  </SqlMethod>
+
+
+</SqlClass>

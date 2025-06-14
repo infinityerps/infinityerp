@@ -1,0 +1,140 @@
+/*
+ *************************************************************************
+ * The contents of this file are subject to the Openbravo  Public  License
+ * Version  1.1  (the  "License"),  being   the  Mozilla   Public  License
+ * Version 1.1  with a permitted attribution clause; you may not  use this
+ * file except in compliance with the License. You  may  obtain  a copy of
+ * the License at http://www.openbravo.com/legal/license.html
+ * Software distributed under the License  is  distributed  on  an 'AS IS'
+ * basis, WITHOUT WARRANTY OF ANY KIND, either express or implied. See the
+ * License for the specific  language  governing  rights  and  limitations
+ * under the License.
+ * The Original Code is Openbravo ERP.
+ * The Initial Developer of the Original Code is Openbravo SLU
+ * All portions are Copyright (C) 2011 Openbravo SLU
+ * All Rights Reserved.
+ * Contributor(s):  ______________________________________.
+ ************************************************************************
+*/
+
+.OBGridCell,
+.OBGridCellOver,
+.OBGridCellDark,
+.OBGridCellOverDark,
+.OBGridCellSelected,
+.OBGridCellSelectedDark,
+.OBGridCellSelectedOver,
+.OBGridCellSelectedOverDark,
+.OBGridCellDisabled,
+.OBGridCellDisabledDark,
+
+.OBGridCellSelectedViewInactive,
+.OBGridCellSelectedViewInactiveDark,
+
+.OBGridCellEdit,
+.OBGridCellEditOver,
+.OBGridCellEditDark,
+.OBGridCellEditOverDark,
+.OBGridCellEditSelected,
+.OBGridCellEditSelectedDark,
+.OBGridCellEditSelectedOver,
+.OBGridCellEditSelectedOverDark,
+.OBGridCellEditDisabled,
+.OBGridCellEditDisabledDark,
+
+.OBGridCellError,
+.OBGridCellErrorOver,
+.OBGridCellErrorDark,
+.OBGridCellErrorOverDark,
+.OBGridCellErrorSelected,
+.OBGridCellErrorSelectedDark,
+.OBGridCellErrorSelectedOver,
+.OBGridCellErrorSelectedOverDark,
+.OBGridCellErrorDisabled,
+.OBGridCellErrorDisabledDark,
+
+.OBGridCellErrorEdit,
+.OBGridCellErrorEditOver,
+.OBGridCellErrorEditDark,
+.OBGridCellErrorEditOverDark,
+.OBGridCellErrorEditSelected,
+.OBGridCellErrorEditSelectedDark,
+.OBGridCellErrorEditSelectedOver,
+.OBGridCellErrorEditSelectedOverDark,
+.OBGridCellErrorEditDisabled,
+.OBGridCellErrorEditDisabledDark {
+  border-color: #c4d2e4;
+}
+
+.OBGridFilterCell {
+  border-color: #bfc1c5;
+}
+
+.OBGridFilterBase {
+  background-color: #c4d2e4;
+  border-color: #bfc1c5;
+}
+
+.OBGridFilterFunnelIcon {
+  background-color: #c4d2e4;
+}
+
+.OBGridHeaderCell {
+  background-color: #EDEFF3;
+}
+
+.OBGridSummaryCell,
+.OBGridSummaryCell_sum,
+.OBGridSummaryCell_avg,
+.OBGridSummaryCell_count {
+  border-color: #c4d2e4;
+}
+
+.OBGridLinkButton,
+.OBGridLinkButtonOver {
+  color: #2f58d0;
+}
+
+.OBGridLinkButtonDown {
+  color: #244d9d;
+}
+
+.OBGridLinkButtonFocused,
+.OBGridLinkButtonFocusedOver,
+.OBGridLinkButtonFocusedDown {
+  color: #dcb53e;
+}
+
+.OBGridNotificationTextLink,
+.OBGridNotificationTextLinkOver,
+.OBGridNotificationTextLink:hover {
+  color: #2f58d0;
+}
+
+.OBGridNotificationTextLinkDown,
+.OBGridNotificationTextLink:active {
+  color: #244d9d;
+}
+
+.OBGridNotificationTextLinkFocused,
+.OBGridNotificationTextLinkFocusedOver,
+.OBGridNotificationTextLinkFocusedDown,
+.OBGridNotificationTextLink:focus {
+  color: #dcb53e;
+}
+
+/*=======================================================================
+ * Defines the style of a OBGrid with records representing links 
+ * (used in LinkedItems components)
+=======================================================================*/
+.OBGridLinkCell,
+.OBGridLinkCellOver,
+.OBGridLinkCellSelected,
+.OBGridLinkCellSelectedOver,
+.OBGridLinkCellDark,
+.OBGridLinkCellOverDark,
+.OBGridLinkCellSelectedDark,
+.OBGridLinkCellSelectedOverDark {
+  color: #2f58d0;
+  border-color: #c4d2e4;
+}

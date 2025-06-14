@@ -1,0 +1,81 @@
+<?xml version="1.0"?>
+  <database name="TABLE EMEX_REPORTCONFIG">
+    <table name="EMEX_REPORTCONFIG" primaryKey="EMEX_REPORTCONFIG_KEY">
+      <column name="EMEX_REPORTCONFIG_ID" primaryKey="true" required="true" type="VARCHAR" size="32" autoIncrement="false">
+        <default/>
+        <onCreateDefault/>
+      </column>
+      <column name="AD_CLIENT_ID" primaryKey="false" required="true" type="VARCHAR" size="32" autoIncrement="false">
+        <default/>
+        <onCreateDefault/>
+      </column>
+      <column name="AD_ORG_ID" primaryKey="false" required="true" type="VARCHAR" size="32" autoIncrement="false">
+        <default/>
+        <onCreateDefault/>
+      </column>
+      <column name="ISACTIVE" primaryKey="false" required="true" type="CHAR" size="1" autoIncrement="false">
+        <default><![CDATA[Y]]></default>
+        <onCreateDefault/>
+      </column>
+      <column name="CREATED" primaryKey="false" required="true" type="TIMESTAMP" size="7" autoIncrement="false">
+        <default><![CDATA[SYSDATE]]></default>
+        <onCreateDefault/>
+      </column>
+      <column name="CREATEDBY" primaryKey="false" required="true" type="VARCHAR" size="32" autoIncrement="false">
+        <default/>
+        <onCreateDefault/>
+      </column>
+      <column name="UPDATED" primaryKey="false" required="true" type="TIMESTAMP" size="7" autoIncrement="false">
+        <default><![CDATA[SYSDATE]]></default>
+        <onCreateDefault/>
+      </column>
+      <column name="UPDATEDBY" primaryKey="false" required="true" type="VARCHAR" size="32" autoIncrement="false">
+        <default/>
+        <onCreateDefault/>
+      </column>
+      <column name="SNAME" primaryKey="false" required="true" type="VARCHAR" size="100" autoIncrement="false">
+        <default/>
+        <onCreateDefault/>
+      </column>
+      <column name="SQUERY" primaryKey="false" required="false" type="CLOB" size="4000" autoIncrement="false">
+        <default/>
+        <onCreateDefault/>
+      </column>
+      <column name="EMEX_REPORTCATEGORY_ID" primaryKey="false" required="true" type="VARCHAR" size="32" autoIncrement="false">
+        <default/>
+        <onCreateDefault/>
+      </column>
+      <column name="EMEX_REPORTCATEGORY_DET_ID" primaryKey="false" required="true" type="VARCHAR" size="32" autoIncrement="false">
+        <default/>
+        <onCreateDefault/>
+      </column>
+      <column name="EMEX_REPORTCONNECTION_ID" primaryKey="false" required="false" type="VARCHAR" size="32" autoIncrement="false">
+        <default/>
+        <onCreateDefault/>
+      </column>
+      <column name="ISJASPER" primaryKey="false" required="true" type="CHAR" size="1" autoIncrement="false">
+        <default><![CDATA[N]]></default>
+        <onCreateDefault/>
+      </column>
+      <column name="JRNAME" primaryKey="false" required="false" type="VARCHAR" size="256" autoIncrement="false">
+        <default/>
+        <onCreateDefault/>
+      </column>
+      <foreign-key foreignTable="AD_CLIENT" name="EMEX_REPORTCONFIG_AD_CLIENT_FK">
+        <reference local="AD_CLIENT_ID" foreign="AD_CLIENT_ID"/>
+      </foreign-key>
+      <foreign-key foreignTable="AD_ORG" name="EMEX_REPORTCONFIG_AD_ORG_FK">
+        <reference local="AD_ORG_ID" foreign="AD_ORG_ID"/>
+      </foreign-key>
+      <foreign-key foreignTable="EMEX_REPORTCATEGORY" name="EMEX_REPORTCONFIG_REPORTCAT_FK">
+        <reference local="EMEX_REPORTCATEGORY_ID" foreign="EMEX_REPORTCATEGORY_ID"/>
+      </foreign-key>
+      <foreign-key foreignTable="EMEX_REPORTCATEGORY_DET" name="EMEX_REPORTCONFIG_RPTCATDET_FK">
+        <reference local="EMEX_REPORTCATEGORY_DET_ID" foreign="EMEX_REPORTCATEGORY_DET_ID"/>
+      </foreign-key>
+      <foreign-key foreignTable="EMEX_REPORTCONNECTION" name="EMEX_REPORTCONFIG_RPTCONN_FK">
+        <reference local="EMEX_REPORTCONNECTION_ID" foreign="EMEX_REPORTCONNECTION_ID"/>
+      </foreign-key>
+      <check name="EMEX_REPORTCONFIG_ISACTIVE_CHK"><![CDATA[ISACTIVE IN ('Y', 'N')]]></check>
+    </table>
+  </database>

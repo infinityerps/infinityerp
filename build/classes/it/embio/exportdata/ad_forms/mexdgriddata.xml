@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<REPORT>
+	<template file="mexdgriddata.html"/>
+	
+	<PARAMETER id="paramDirectory" name="directory" default=""/>
+	<PARAMETER id="paramLanguage" name="language" default=""/>
+        <PARAMETER id="paramAlertMsg" name="alertMsg" default=""/>
+        <PARAMETER id="mexdReportNamegrid" name="mexdReportNamegrid" default=""/>
+	<PARAMETER id="paramCSS" name="theme" attribute="href" replace="Default"/>
+	<DISCARD id="discard"/>
+</REPORT>
